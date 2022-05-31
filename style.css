@@ -16,7 +16,9 @@ html{
 /* navbar styling */
 .navbar{
     position: fixed;
+    background: black;
     width: 100%;
+    height: 10%;
     z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
@@ -228,16 +230,23 @@ section .title::after {
 }
 
 /* services section styling */
-.services, .teams{
+.services, .teams, .logo,
+.thumb, .shirt{
     color: #fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.teams .title::before,
+.logo .title::before,
+.thumb .title::before,
+.shirt .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.teams .title::after,
+.logo .title::after,
+.thumb .title::after,
+.shirt .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -333,22 +342,22 @@ section .title::after {
 }
 /* programmer */
 .skills .skills-content .right .css::before{
-    width: 40%;
+    width: 20%;
 }
 .skills .skills-content .right .html::before {
-    width: 40%;
+    width: 20%;
 }
 .skills .skills-content .right .javascript::before {
     width: 20%;
 }
 .skills .skills-content .right .wordpress::before {
-    width: 70%;
-}
-.skills .skills-content .right .csharp::before {
     width: 40%;
 }
+.skills .skills-content .right .csharp::before {
+    width: 30%;
+}
 .skills .skills-content .right .unity::before {
-    width: 50%;
+    width: 40%;
 }
 /* machinist */
 .skills .skills-content .right .cnc::before {
@@ -375,7 +384,7 @@ section .title::after {
     width: 60%;
 }
 .skills .skills-content .right .ps::before {
-    width: 70%;
+    width: 60%;
 }
 /* divition */
 .skills .skills-content .right .divition::before {
@@ -442,6 +451,224 @@ section .title::after {
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+/* Logo Design */
+.logo .title::after {
+    content: "Sample";
+}
+
+.logo .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.logo .carousel .card:hover {
+    background: crimson;
+}
+
+.logo .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.logo .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.logo .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.logo .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.logo .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
+/* thumb Design */
+.thumb .title::after {
+    content: "Sample";
+}
+
+.thumb .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.thumb .carousel .card:hover {
+    background: crimson;
+}
+
+.thumb .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.thumb .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.thumb .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.thumb .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.thumb .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
+/* shirt Design */
+.shirt .title::after {
+    content: "Sample";
+}
+
+.shirt .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.shirt .carousel .card:hover {
+    background: crimson;
+}
+
+.shirt .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.shirt .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.shirt .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.shirt .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.shirt .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
 }
 
 /* contact section styling */
