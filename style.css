@@ -231,7 +231,7 @@ section .title::after {
 
 /* services section styling */
 .services, .teams, .logo,
-.thumb, .shirt{
+.thumb, .shirt, .pixel, .poster, .slogo{
     color: #fff;
     background: #111;
 }
@@ -239,14 +239,20 @@ section .title::after {
 .teams .title::before,
 .logo .title::before,
 .thumb .title::before,
-.shirt .title::before{
+.shirt .title::before,
+.pixel .title::before,
+.poster .title::before,
+.slogo .title::before{
     background: #fff;
 }
 .services .title::after,
 .teams .title::after,
 .logo .title::after,
 .thumb .title::after,
-.shirt .title::after{
+.shirt .title::after,
+.pixel .title::after,
+.poster .title::after,
+.slogo .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -643,6 +649,225 @@ section .title::after {
 }*/
 
 .shirt .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
+/* 2D pixel Design */
+.pixel .title::after {
+    content: "Sample";
+}
+
+.pixel .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pixel .carousel .card:hover {
+    background: crimson;
+}
+
+.pixel .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pixel .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.pixel .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.pixel .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.pixel .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
+/* Poster Design */
+.poster .title::after {
+    content: "Sample";
+}
+
+.poster .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.poster .carousel .card:hover {
+    background: crimson;
+}
+
+.poster .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.poster .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.poster .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.poster .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.poster .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
+/* Special Logo Design */
+.slogo .title::after {
+    content: "Special Logo";
+}
+
+.slogo .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.slogo .carousel .card:hover {
+    background: crimson;
+}
+
+.slogo .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.slogo .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.slogo .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.slogo .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.slogo .carousel .card:hover img {
     border-color: #fff;
 }
 
