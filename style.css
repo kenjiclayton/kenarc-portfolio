@@ -96,7 +96,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("Image/BannerMyOwn.jpg") no-repeat center;
+    background: url("Image/Kenneth\ Banner.png") no-repeat center;
     height: 80vh;
     color: #fff;
     min-height: 500px;
@@ -399,7 +399,7 @@ section .title::after {
 
 /* teams section styling */
 .teams .title::after{
-    content: "Who's with me";
+    content: "Sample";
 }
 .teams .carousel .card{
     background: #222;
@@ -426,14 +426,14 @@ section .title::after {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+/*.teams .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
     transition: all 0.3s ease;
-}
+}*/
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
@@ -493,14 +493,14 @@ section .title::after {
     margin: 10px 0 7px 0;
 }
 
-.logo .carousel .card img {
+/*.logo .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
     transition: all 0.3s ease;
-}
+}*/
 
 .logo .carousel .card:hover img {
     border-color: #fff;
