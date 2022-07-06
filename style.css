@@ -94,7 +94,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("Image/Kenneth\ Banner\ 2.png") no-repeat center;
+    background: url("Image/Kenneth\ Banner.png") no-repeat center;
     height: 80vh;
     color: #fff;
     min-height: 500px;
@@ -106,23 +106,23 @@ html{
 .home .home-content .text-1{
     font-size: 27px;
     font-weight: 500;
-    color: white;
+    color: Black;
     display: inline-block;
     padding: 6px 18px;
-    background: black;
+    background: #fff;
     border-radius: 5px;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
-    color: black;
+    color: #fff;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
     font-weight: 500;
-    color: black;
+    color: #fff;
 }
 .home .home-content .text-3 span{
     color: crimson;
