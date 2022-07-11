@@ -404,7 +404,7 @@ section .title::after {
     width: 0%;
 }
 
-/* teams section styling */
+/* Vectfor section styling */
 .teams .title::after{
     content: "Sample";
 }
