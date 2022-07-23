@@ -296,6 +296,15 @@ section .title::after {
 }
 
 /* skills section styling */
+.skills, .about, .contact{
+    display: flex;
+    background: url(image/Kenarc\ Back\ Ground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+}
 .skills .title::after{
     content: "What I know";
 }
@@ -310,6 +319,7 @@ section .title::after {
 .skills .skills-content .left p{
     text-align: justify;
 }
+/* Read More text *//*
 .skills .skills-content .left a{
     display: inline-block;
     background: crimson;
@@ -325,7 +335,8 @@ section .title::after {
 .skills .skills-content .left a:hover{
     color: crimson;
     background: none;
-}
+}*//* end of Read More text */
+
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
