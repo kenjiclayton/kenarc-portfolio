@@ -302,8 +302,6 @@ section .title::after {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    min-height: 500px;
 }
 .skills .title::after{
     content: "What I know";
