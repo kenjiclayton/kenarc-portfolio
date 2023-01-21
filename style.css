@@ -239,7 +239,7 @@ section .title::after {
 /* services section styling */
 .services, .teams, .logo,
 .thumb, .shirt, .pixel, .poster, .slogo,
-.tdesign{
+.tdesign, .wallpaper{
     color: #fff;
     background: #111;
 }
@@ -251,7 +251,8 @@ section .title::after {
 .pixel .title::before,
 .poster .title::before,
 .slogo .title::before,
-.tdesign .title::before{
+.tdesign .title::before,
+.wallpaper .title::before{
     background: #fff;
 }
 .services .title::after,
@@ -262,7 +263,8 @@ section .title::after {
 .pixel .title::after,
 .poster .title::after,
 .slogo .title::after,
-.tdesign .title::after{
+.tdesign .title::after,
+.wallpaper .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -477,6 +479,69 @@ section .title::after {
 .owl-dot:hover{
     background: crimson!important;
 }
+
+/* Wallpaper section styling */
+.wallpaper .title::after{
+    content: "Sample";
+}
+.wallpaper .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.wallpaper .carousel .card:hover{
+    background: crimson;
+}
+.wallpaper .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.wallpaper .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.wallpaper .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/*.wallpaper .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+.wallpaper .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
 /* Logo Design */
 .logo .title::after {
     content: "Sample";
