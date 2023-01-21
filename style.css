@@ -94,8 +94,8 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("Image/Kenneth\ Banner.png") no-repeat center;
-    background-size: contain;
+    background: url("Image/Wallpaper/Kenneth\ Akatsuki\ Banner\ 2.jpg") no-repeat center;
+    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
