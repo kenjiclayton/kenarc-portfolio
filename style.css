@@ -149,7 +149,7 @@ html{
 section {
     padding: 100px 0;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
