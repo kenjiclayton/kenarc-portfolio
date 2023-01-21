@@ -299,8 +299,15 @@ section .title::after {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-/* skills section styling */
+/* for background */
+.services, .teams, .logo, .thumb, .shirt,
+.pixel, .poster, .slogo, .tdesign,
+.wallpaper{
+    display: flex;
+    background: url(image/Wallpaper/Akatsuki.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .skills, .about, .contact{
     display: flex;
     background: url(image/Kenarc\ Back\ Ground.png);
@@ -308,6 +315,7 @@ section .title::after {
     background-repeat: no-repeat;
     background-position: center;
 }
+/* skills section styling */
 .skills .title::after{
     content: "What I know";
 }
