@@ -307,6 +307,7 @@ section .title::after {
     background: url(image/Wallpaper/Akatsuki.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .skills, .about, .contact{
     display: flex;
