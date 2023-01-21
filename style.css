@@ -305,7 +305,7 @@ section .title::after {
 .wallpaper{
     display: flex;
     background: url(image/KA\ Logo.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
