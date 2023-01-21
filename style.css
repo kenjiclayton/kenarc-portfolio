@@ -299,7 +299,7 @@ section .title::after {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-/* for background */
+/* for background 
 .services, .teams, .logo, .thumb, .shirt,
 .pixel, .poster, .slogo, .tdesign,
 .wallpaper{
@@ -308,7 +308,7 @@ section .title::after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+}*/
 .skills, .about, .contact{
     display: flex;
     background: url(image/Kenarc\ Back\ Ground.png);
