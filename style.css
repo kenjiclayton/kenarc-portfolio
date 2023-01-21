@@ -304,7 +304,7 @@ section .title::after {
 .pixel, .poster, .slogo, .tdesign,
 .wallpaper{
     display: flex;
-    background: url(image/Wallpaper/Akatsuki.jpg);
+    background: url(image/KA\ Logo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
