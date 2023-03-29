@@ -239,7 +239,7 @@ section .title::after {
 /* services section styling */
 .services, .teams, .logo,
 .thumb, .shirt, .pixel, .poster, .slogo,
-.tdesign, .wallpaper{
+.tdesign, .wallpaper, .mockup{
     color: #fff;
     background: #111;
 }
@@ -252,7 +252,8 @@ section .title::after {
 .poster .title::before,
 .slogo .title::before,
 .tdesign .title::before,
-.wallpaper .title::before{
+.wallpaper .title::before,
+.mockup .title::before{
     background: #fff;
 }
 .services .title::after,
@@ -264,7 +265,8 @@ section .title::after {
 .poster .title::after,
 .slogo .title::after,
 .tdesign .title::after,
-.wallpaper .title::after{
+.wallpaper .title::after,
+.mockup .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -383,12 +385,6 @@ section .title::after {
 .skills .skills-content .right .html::before {
     width: 20%;
 }
-.skills .skills-content .right .javascript::before {
-    width: 20%;
-}
-.skills .skills-content .right .wordpress::before {
-    width: 40%;
-}
 .skills .skills-content .right .csharp::before {
     width: 30%;
 }
@@ -397,11 +393,15 @@ section .title::after {
 }
 /* machinist */
 .skills .skills-content .right .cnc::before {
-    width: 70%;
+    width: 60%;
 }
 
 .skills .skills-content .right .cmm::before {
-    width: 80%;
+    width: 70%;
+}
+
+.skills .skills-content .right .cnclm::before {
+    width: 40%;
 }
 
 .skills .skills-content .right .clm::before {
@@ -409,11 +409,11 @@ section .title::after {
 }
 
 .skills .skills-content .right .gcodes::before {
-    width: 60%;
+    width: 20%;
 }
 
 .skills .skills-content .right .mcodes::before {
-    width: 60%;
+    width: 20%;
 }
 /* artist */
 .skills .skills-content .right .it::before {
@@ -960,6 +960,79 @@ section .title::after {
 }*/
 
 .poster .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
+/* Mockups Design */
+.mockup .title::after {
+    content: "Sample";
+}
+
+.mockup .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.mockup .carousel .card:hover {
+    background: crimson;
+}
+
+.mockup .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.mockup .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.mockup .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.mockup .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.mockup .carousel .card:hover img {
     border-color: #fff;
 }
 
