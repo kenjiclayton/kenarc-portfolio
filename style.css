@@ -149,12 +149,15 @@ html{
 section {
     padding: 100px 0;
 }
-.about, .services, .skills, .contact, footer{
+.about, .services, .skills, .contact, .teams
+.machinist2 footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.teams .teams-content,
+.machinist2 .machinist2-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +242,7 @@ section .title::after {
 /* services section styling */
 .services, .teams, .logo,
 .thumb, .shirt, .pixel, .poster, .slogo,
-.tdesign, .wallpaper, .mockup{
+.tdesign, .wallpaper, .mockup, .bgremove{
     color: #fff;
     background: #111;
 }
@@ -253,7 +256,8 @@ section .title::after {
 .slogo .title::before,
 .tdesign .title::before,
 .wallpaper .title::before,
-.mockup .title::before{
+.mockup .title::before,
+.bgremove .title::before{
     background: #fff;
 }
 .services .title::after,
@@ -266,7 +270,8 @@ section .title::after {
 .slogo .title::after,
 .tdesign .title::after,
 .wallpaper .title::after,
-.mockup .title::after{
+.mockup .title::after,
+.bgremove .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -311,7 +316,7 @@ section .title::after {
     background-repeat: no-repeat;
     background-position: center;
 }*/
-.skills, .about, .contact{
+.skills, .about, .contact, .machinist, .machinistvid{
     display: flex;
     background: url(image/Kenarc\ Back\ Ground.png);
     background-size: contain;
@@ -393,27 +398,27 @@ section .title::after {
 }
 /* machinist */
 .skills .skills-content .right .cnc::before {
-    width: 60%;
+    width: 20%;
 }
 
 .skills .skills-content .right .cmm::before {
-    width: 70%;
+    width: 20%;
 }
 
 .skills .skills-content .right .cnclm::before {
-    width: 40%;
+    width: 10%;
 }
 
 .skills .skills-content .right .clm::before {
-    width: 40%;
+    width: 10%;
 }
 
 .skills .skills-content .right .gcodes::before {
-    width: 20%;
+    width: 10%;
 }
 
 .skills .skills-content .right .mcodes::before {
-    width: 20%;
+    width: 10%;
 }
 /* artist */
 .skills .skills-content .right .it::before {
@@ -1061,6 +1066,79 @@ section .title::after {
     background: crimson !important;
 }
 
+/* Background Remove */
+.bgremove .title::after {
+    content: "Sample";
+}
+
+.bgremove .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.bgremove .carousel .card:hover {
+    background: crimson;
+}
+
+.bgremove .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.bgremove .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.bgremove .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.bgremove .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.bgremove .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
 /* Special Logo Design */
 .slogo .title::after {
     content: "Special Logo";
@@ -1134,21 +1212,191 @@ section .title::after {
     background: crimson !important;
 }
 
+/* Mchinist Jamco */
+.machinist2 .title::after{
+    content: "Sankei (Img)";
+}
+.machinist2 .carousel .column{
+    width: calc(50% - 30px);
+}
+.machinist2 .carousel .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.machinist2 .carousel  .card {
+    background: #dadada;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.machinist2 .carousel .card:hover {
+    background: crimson;
+}
+.machinist2 .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.machinist2 .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.machinist2 .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.machinist2 .carousel .card:hover img {
+    border-color: #fff;
+}
+
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+/* Mchinist Sankei*/
+.machinist .title::after{
+    content: "Sankei (Img)";
+}
+.machinist .carousel .column{
+    width: calc(50% - 30px);
+}
+.machinist .carousel .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.machinist .carousel  .card {
+    background: #dadada;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.machinist .carousel .card:hover {
+    background: crimson;
+}
+.machinist .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.machinist .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.machinist .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.machinist .carousel .card:hover img {
+    border-color: #fff;
+}
+
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+/* Mchinist for video */
+.machinistvid .title::after{
+    content: "Sankei (vid)";
+}
+
+.machinistvid .carsel .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.machinistvid .carsel {
+    background: #dadada;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+.machinistvid .carsel .card .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.machinistvid .carsel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.machinistvid .carsel .card:hover img {
+    border-color: #fff;
+}
+
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
 
 /* contact section styling */
 .contact .title::after{
     content: "Get in touch";
 }
-.contact .contact-content .column{
+.contact .contact-content{
     width: calc(50% - 30px);
 }
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+    
 }
 .contact .contact-content .left p{
-    text-align: justify;
+    text-align: center;
 }
 .contact .contact-content .left .icon{
     margin: 10px 0;
@@ -1171,60 +1419,7 @@ section .title::after {
 .contact .contact-content .info .sub-title{
     color: #333;
 }
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .email {
-    margin-left: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-}
-.contact .right form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
-}
-.contact .right form .button{
-    height: 47px;
-    width: 170px;
-}
-.contact .right form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid crimson;
-    background: crimson;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.contact .right form .button button:hover{
-    color: crimson;
-    background: none;
-}
+
 
 /* footer section styling */
 footer{

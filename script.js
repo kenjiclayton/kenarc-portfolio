@@ -41,7 +41,7 @@ $(document).ready(function(){
     // owl carousel script //
     $('.carousel').owlCarousel({
         margin: 20,
-        loop: true,
+        loop: false,
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
@@ -57,9 +57,12 @@ $(document).ready(function(){
                 items: 3,
                 nav: false
             }
+
+            
         }
 
     });
+
 });
 /*! medium-zoom 1.0.6 | MIT License | https://github.com/francoischalifour/medium-zoom */
 (function (global, factory) {
