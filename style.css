@@ -619,7 +619,7 @@ section .title::after {
 
 /* Special Logo Design */
 .slogo .title::after {
-    content: "Special Logo";
+    content: "Sample";
 }
 
 .slogo .carousel .card {
