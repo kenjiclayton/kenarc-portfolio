@@ -232,7 +232,6 @@ section .title::after {
 }
 .services .title::before,
 .teams .title::before,
-.logo .title::before,
 .shirt .title::before,
 .pixel .title::before,
 .poster .title::before,
@@ -243,7 +242,6 @@ section .title::after {
 }
 .services .title::after,
 .teams .title::after,
-.logo .title::after,
 .shirt .title::after,
 .pixel .title::after,
 .poster .title::after,
@@ -328,78 +326,6 @@ section .title::after {
     background: crimson!important;
 }
 
-/* Logo Design */
-.logo .title::after {
-    content: "Sample";
-}
-
-.logo .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.logo .carousel .card:hover {
-    background: crimson;
-}
-
-.logo .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.logo .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.logo .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.logo .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.logo .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
 /* teepublic Design */
 .tdesign .title::after {
     content: "Sample";
