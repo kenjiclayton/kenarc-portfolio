@@ -13,6 +13,12 @@ html{
     padding: 0 80px;
     margin: auto;
 }
+body{
+    margin: 0 50px;
+    background: green;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -94,8 +100,6 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("Image/Wallpaper/Kenneth\ Akatsuki\ Banner\ 2.jpg") no-repeat center;
-    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -149,15 +153,13 @@ html{
 section {
     padding: 100px 0;
 }
-.about, .services, .skills, .contact, .teams
-.machinist2 footer{
+.about, .services, .contact, .teams,
+footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
 .teams .teams-content,
-.machinist2 .machinist2-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -245,7 +247,7 @@ section .title::after {
 .tdesign, .wallpaper, .mockup, .bgremove,
 .album{
     color: #fff;
-    background: #111;
+    /*background: #111;*/
 }
 .services .title::before,
 .teams .title::before,
@@ -319,120 +321,8 @@ section .title::after {
     background-repeat: no-repeat;
     background-position: center;
 }*/
-.skills, .about, .contact, .machinist, .machinistvid{
+.about, .contact{
     display: flex;
-    background: url(image/Kenarc\ Back\ Ground.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* skills section styling */
-.skills .title::after{
-    content: "What I know";
-}
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-/* Read More text *//*
-.skills .skills-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: crimson;
-    background: none;
-}*//* end of Read More text */
-
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right .span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
-/* programmer */
-.skills .skills-content .right .css::before{
-    width: 20%;
-}
-.skills .skills-content .right .html::before {
-    width: 20%;
-}
-.skills .skills-content .right .csharp::before {
-    width: 30%;
-}
-.skills .skills-content .right .unity::before {
-    width: 40%;
-}
-/* machinist */
-.skills .skills-content .right .cnc::before {
-    width: 20%;
-}
-
-.skills .skills-content .right .cmm::before {
-    width: 20%;
-}
-
-.skills .skills-content .right .cnclm::before {
-    width: 10%;
-}
-
-.skills .skills-content .right .clm::before {
-    width: 10%;
-}
-
-.skills .skills-content .right .gcodes::before {
-    width: 10%;
-}
-
-.skills .skills-content .right .mcodes::before {
-    width: 10%;
-}
-/* artist */
-.skills .skills-content .right .it::before {
-    width: 60%;
-}
-.skills .skills-content .right .ps::before {
-    width: 60%;
-}
-/* divition */
-.skills .skills-content .right .divition::before {
-    width: 0%;
 }
 
 /* Vectfor section styling */
@@ -1288,174 +1178,6 @@ section .title::after {
     background: crimson !important;
 }
 
-/* Mchinist Jamco */
-.machinist2 .title::after{
-    content: "Sankei (Img)";
-}
-.machinist2 .carousel .column{
-    width: calc(50% - 30px);
-}
-.machinist2 .carousel .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.machinist2 .carousel  .card {
-    background: #dadada;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.machinist2 .carousel .card:hover {
-    background: crimson;
-}
-.machinist2 .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.machinist2 .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.machinist2 .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.machinist2 .carousel .card:hover img {
-    border-color: #fff;
-}
-
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-/* Mchinist Sankei*/
-.machinist .title::after{
-    content: "Sankei (Img)";
-}
-.machinist .carousel .column{
-    width: calc(50% - 30px);
-}
-.machinist .carousel .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.machinist .carousel  .card {
-    background: #dadada;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.machinist .carousel .card:hover {
-    background: crimson;
-}
-.machinist .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.machinist .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.machinist .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.machinist .carousel .card:hover img {
-    border-color: #fff;
-}
-
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-/* Mchinist for video */
-.machinistvid .title::after{
-    content: "Sankei (vid)";
-}
-
-.machinistvid .carsel .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.machinistvid .carsel {
-    background: #dadada;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-}
-
-.machinistvid .carsel .card .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.machinistvid .carsel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.machinistvid .carsel .card:hover img {
-    border-color: #fff;
-}
-
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
 /* contact section styling */
 .contact .title::after{
     content: "Get in touch";
@@ -1595,7 +1317,6 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -1615,8 +1336,7 @@ footer span a:hover{
     .home .home-content a {
         font-size: 20px;
     }
-    .services .serv-content .card,
-    .skills .skills-content .column{
+    .services .serv-content .card{
         width: 100%;
     }
 
