@@ -15,6 +15,7 @@ html{
 }
 body{
     margin: 0 50px;
+    height: 1000vh;
     background: green;
     background-repeat: no-repeat;
     background-size: auto;
@@ -23,8 +24,8 @@ body{
 .navbar{
     position: fixed;
     width: 100%;
+    margin-top: 10px;
     z-index: 999;
-    background: #111;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -39,14 +40,8 @@ body{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
-    font-weight: 600;
 }
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-.navbar .sticky .logo a span{
+.navbar .sticky .logo a{
     color: #fff;
 }
 .navbar .menu li{
@@ -58,7 +53,7 @@ body{
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 25px;
+    margin-left: 50px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -132,21 +127,6 @@ body{
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
-}
-.home .home-content a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: crimson;
-    background: none;
 }
 
 /* all similar content styling code */
@@ -243,40 +223,31 @@ section .title::after {
 }
 /* services section styling */
 .services, .teams, .logo,
-.thumb, .shirt, .pixel, .poster, .slogo,
-.tdesign, .wallpaper, .mockup, .bgremove,
-.album{
+.shirt, .pixel, .poster, .slogo,
+.tdesign, .wallpaper, .mockup{
     color: #fff;
     /*background: #111;*/
 }
 .services .title::before,
 .teams .title::before,
 .logo .title::before,
-.thumb .title::before,
 .shirt .title::before,
 .pixel .title::before,
 .poster .title::before,
 .slogo .title::before,
 .tdesign .title::before,
-.wallpaper .title::before,
-.mockup .title::before,
-.bgremove .title::before,
-.album .title::before{
+.mockup .title::before{
     background: #fff;
 }
 .services .title::after,
 .teams .title::after,
 .logo .title::after,
-.thumb .title::after,
 .shirt .title::after,
 .pixel .title::after,
 .poster .title::after,
 .slogo .title::after,
 .tdesign .title::after,
-.wallpaper .title::after,
-.mockup .title::after,
-.bgremove .title::after,
-.album .title::after{
+.mockup .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -312,9 +283,8 @@ section .title::after {
     margin: 10px 0 7px 0;
 }
 /* for background 
-.services, .teams, .logo, .thumb, .shirt,
-.pixel, .poster, .slogo, .tdesign,
-.wallpaper{
+.services, .teams, .logo, .shirt,
+.pixel, .poster, .slogo, .tdesign{
     display: flex;
     background: url(image/KA\ Logo.jpg);
     background-size: cover;
@@ -363,68 +333,6 @@ section .title::after {
     transition: all 0.3s ease;
 }*/
 .teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-}
-
-/* Wallpaper section styling */
-.wallpaper .title::after{
-    content: "Sample";
-}
-.wallpaper .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-.wallpaper .carousel .card:hover{
-    background: crimson;
-}
-.wallpaper .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.wallpaper .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.wallpaper .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-/*.wallpaper .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-.wallpaper .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -566,79 +474,6 @@ section .title::after {
 }*/
 
 .tdesign .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
-
-/* thumb Design */
-.thumb .title::after {
-    content: "Sample";
-}
-
-.thumb .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.thumb .carousel .card:hover {
-    background: crimson;
-}
-
-.thumb .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.thumb .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.thumb .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.thumb .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.thumb .carousel .card:hover img {
     border-color: #fff;
 }
 
@@ -886,79 +721,6 @@ section .title::after {
     background: crimson !important;
 }
 
-/* Music Album Design */
-.album .title::after {
-    content: "Sample";
-}
-
-.album .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.album .carousel .card:hover {
-    background: crimson;
-}
-
-.album .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.album .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.album .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.album .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.album .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
-
 /* Mockups Design */
 .mockup .title::after {
     content: "Sample";
@@ -1032,78 +794,6 @@ section .title::after {
     background: crimson !important;
 }
 
-/* Background Remove */
-.bgremove .title::after {
-    content: "Sample";
-}
-
-.bgremove .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.bgremove .carousel .card:hover {
-    background: crimson;
-}
-
-.bgremove .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.bgremove .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.bgremove .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.bgremove .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.bgremove .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
 
 /* Special Logo Design */
 .slogo .title::after {
