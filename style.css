@@ -16,85 +16,9 @@ html{
 body{
     width: 100%;
     height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(Image/Kenneth\ Akatsuki\ Banner\ 2.jpg);
-    background-attachment: fixed;
+    background-color: #D2E3C8;
 }
 
-/* navbar styling */
-.navbar{
-    position: fixed;
-    width: 100%;
-    margin-top: 10px;
-    z-index: 999;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-.navbar .sticky{
-    padding: 15px 0;
-    background: crimson;
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-}
-.navbar .sticky .logo a{
-    color: #fff;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    display: block;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 50px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: crimson;
-}
-.navbar .sticky .menu li a:hover{
-    color: #fff;
-}
-/* menu btn styling */
-.menu-btn{
-    color: #fff;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-}
 /* home section styling */
 .home{
     display: flex;
@@ -109,27 +33,43 @@ body{
 .home .home-content .text-1{
     font-size: 27px;
     font-weight: 500;
-    color: Black;
-    display: inline-block;
-    padding: 6px 18px;
-    background: #fff;
-    border-radius: 5px;
+    color: #739072;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
-    margin-left: -3px;
-    color: #fff;
+    color: #4F6F52;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 27px;
     margin: 5px 0;
     font-weight: 500;
-    color: #fff;
+    color: #739072;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    font-size: 35px;
+    color: #4F6F52;
     font-weight: 500;
+}
+.home .home-content .text-4 h1{
+    font-size: 20px;
+    color: #739072;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: #4F6F52;
+    color: #D2E3C8;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #D2E3C8;
+    background: #86A789;
 }
 
 /* all similar content styling code */
@@ -146,13 +86,13 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    color: #fff;
+    color: #4F6F52;
     justify-content: space-between;
 }
 section .title {
     position: relative;
     text-align: center;
-    color: #fff;
+    color: #4F6F52;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
@@ -175,59 +115,16 @@ section .title::after {
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: #fff;
+    color: #4F6F52;
     padding: 5px;
     transform: translateX(-50%);
 }
 
-/* about section styling */
-.about .title::after{
-    content: "who I am";
-}
-.about .about-content .left{
-    width: 45%;
-}
-.about .about-content .left img{
-    height:300px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-.about .about-content .right{
-    width: 55%;
-}
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.about .about-content .right .text span{
-    color: crimson;
-}
-.about .about-content .right p{
-    text-align: justify;
-}
-.about .about-content .right a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.about .about-content .right a:hover{
-    color: crimson;
-    background: none;
-}
 /* services section styling */
 .services, .teams, .pixel,
 .poster, .slogo, .tdesign,
 .wallpaper, .mockup{
-    color: #fff;
+    color: #D2E3C8;
     /*background: #111;*/
 }
 .services .title::before,
@@ -237,7 +134,7 @@ section .title::after {
 .slogo .title::before,
 .tdesign .title::before,
 .mockup .title::before{
-    color: #fff;
+    color: #D2E3C8;
 }
 .services .title::after,
 .teams .title::after,
@@ -258,7 +155,7 @@ section .title::after {
     background-repeat: no-repeat;
     background-position: center;
 }*/
-.about, .contact{
+.contact{
     display: flex;
 }
 
@@ -267,14 +164,14 @@ section .title::after {
     content: "Sample";
 }
 .teams .carousel .card{
-    background: #222;
+    background: #4F6F52;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    background: #86A789;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -300,7 +197,7 @@ section .title::after {
     transition: all 0.3s ease;
 }*/
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #D2E3C8;
 }
 .owl-dots{
     text-align: center;
@@ -312,7 +209,7 @@ section .title::after {
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #4F6F52!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -321,317 +218,24 @@ section .title::after {
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #4F6F52!important;
 }
-
-/* teepublic Design */
-.tdesign .title::after {
-    content: "Sample";
-}
-
-.tdesign .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.tdesign .carousel .card:hover {
-    background: crimson;
-}
-
-.tdesign .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.tdesign .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.tdesign .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.tdesign .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.tdesign .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
-
-/* 2D pixel Design */
-.pixel .title::after {
-    content: "Sample";
-}
-
-.pixel .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.pixel .carousel .card:hover {
-    background: crimson;
-}
-
-.pixel .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.pixel .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.pixel .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.pixel .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.pixel .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
-
-/* Poster Design */
-.poster .title::after {
-    content: "Sample";
-}
-
-.poster .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.poster .carousel .card:hover {
-    background: crimson;
-}
-
-.poster .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.poster .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.poster .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.poster .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.poster .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
-
-/* Mockups Design */
-.mockup .title::after {
-    content: "Sample";
-}
-
-.mockup .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.mockup .carousel .card:hover {
-    background: crimson;
-}
-
-.mockup .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.mockup .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.mockup .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/*.mockup .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}*/
-
-.mockup .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid crimson !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
-
 
 /* Special Logo Design */
 .slogo .title::after {
     content: "Sample";
 }
 
-.slogo .carousel .card {
-    background: #222;
+.slogo .carousel .card{
+    background: #4F6F52;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
 
-.slogo .carousel .card:hover {
-    background: crimson;
+.slogo .carousel .card:hover{
+    background: #86A789;
 }
 
 .slogo .carousel .card .box {
@@ -662,7 +266,7 @@ section .title::after {
 }*/
 
 .slogo .carousel .card:hover img {
-    border-color: #fff;
+    border-color: #D2E3C8;
 }
 
 .owl-dots {
@@ -676,7 +280,7 @@ section .title::after {
     margin: 0 5px;
     outline: none !important;
     border-radius: 50%;
-    border: 2px solid crimson !important;
+    border: 2px solid #4F6F52 !important;
     transition: all 0.3s ease;
 }
 
@@ -687,7 +291,299 @@ section .title::after {
 
 .owl-dot.active,
 .owl-dot:hover {
-    background: crimson !important;
+    background: #4F6F52 !important;
+}
+
+/* teepublic Design */
+.tdesign .title::after {
+    content: "Sample";
+}
+
+.tdesign .carousel .card{
+    background: #4F6F52;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tdesign .carousel .card:hover{
+    background: #86A789;
+}
+
+.tdesign .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.tdesign .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.tdesign .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.tdesign .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.tdesign .carousel .card:hover img {
+    border-color: #D2E3C8;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #4F6F52 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #4F6F52 !important;
+}
+
+/* 2D pixel Design */
+.pixel .title::after {
+    content: "Sample";
+}
+
+.pixel .carousel .card{
+    background: #4F6F52;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pixel .carousel .card:hover{
+    background: #86A789;
+}
+
+.pixel .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pixel .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.pixel .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.pixel .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.pixel .carousel .card:hover img {
+    border-color: #D2E3C8;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #4F6F52 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #4F6F52 !important;
+}
+
+/* Poster Design */
+.poster .title::after {
+    content: "Sample";
+}
+
+.poster .carousel .card{
+    background: #4F6F52;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.poster .carousel .card:hover{
+    background: #86A789;
+}
+
+.poster .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.poster .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.poster .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.poster .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.poster .carousel .card:hover img {
+    border-color: #D2E3C8;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #4F6F52 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #4F6F52 !important;
+}
+
+/* Mockups Design */
+.mockup .title::after {
+    content: "Sample";
+}
+
+.mockup .carousel .card{
+    background: #4F6F52;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.mockup .carousel .card:hover{
+    background: #86A789;
+}
+
+.mockup .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.mockup .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.mockup .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*.mockup .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}*/
+
+.mockup .carousel .card:hover img {
+    border-color: #D2E3C8;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #4F6F52 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #4F6F52 !important;
 }
 
 /* contact section styling */
@@ -721,24 +617,26 @@ section .title::after {
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #4F6F52;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    font-size: 20px;
+    color: #4F6F52;
 }
 
 
 /* footer section styling */
 footer{
-    background: #111;
+    text-align: center;
+    background: #86A789;
     padding: 20px 23px;
-    color: #fff;
+    color: #D2E3C8;
 }
 footer span a{
-    color: crimson;
+    color: #4F6F52;
     text-decoration: none;
 }
 footer span a:hover{
