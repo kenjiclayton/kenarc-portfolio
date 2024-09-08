@@ -21,13 +21,18 @@ body{
     background-size: cover;
 }
 
-main{
-    width: 600px;
-    height: 850px;
-    background-color: #EEEEEE;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: #111;
+.pages{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
 }
 
 /* home section styling */
